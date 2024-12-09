@@ -11,7 +11,7 @@ class Cfctl < Formula
   on_macos do
     on_intel do
       url "https://github.com/cloudforet-io/cfctl/releases/download/v1.0.0/cfctl_Darwin_x86_64.tar.gz"
-      sha256 "96bf082210ade3bce5c4af366af30fb448c67e137db8f12b2c8c587b599f6045"
+      sha256 "7f2bb2f6d23f24c3321ad683d06586d496d321e1bc34ea4bbe3bf7d5caf7abe2"
 
       def install
         bin.install "cfctl"
@@ -19,7 +19,7 @@ class Cfctl < Formula
     end
     on_arm do
       url "https://github.com/cloudforet-io/cfctl/releases/download/v1.0.0/cfctl_Darwin_arm64.tar.gz"
-      sha256 "c1cccb612c8dd3072639f94fef44e84966ebecc15e8a5963c73ed4643b539787"
+      sha256 "aa91724cb252ef9d5de329e5fff3587546e7b8d05e5a18a7eae08d64ef85cbc6"
 
       def install
         bin.install "cfctl"
@@ -31,7 +31,7 @@ class Cfctl < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/cloudforet-io/cfctl/releases/download/v1.0.0/cfctl_Linux_x86_64.tar.gz"
-        sha256 "32e5d06cb3ecc73ee89644703b8082ac53bd31f2987abb29c970bf23e31472db"
+        sha256 "ed6f6f1521b0f50b5195210ef8badc30a4fecdc392955a8369bd457c9a99e3f1"
 
         def install
           bin.install "cfctl"
@@ -41,7 +41,7 @@ class Cfctl < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/cloudforet-io/cfctl/releases/download/v1.0.0/cfctl_Linux_arm64.tar.gz"
-        sha256 "b31f87855d3e268ca8f47bf1a652c6af292e16f67b8b692de41dada90ee4686a"
+        sha256 "8a68123a99e7a894c7fa27dfb2c937a7befc48d3deb4ad6cbb0ee25ffd9e0c8f"
 
         def install
           bin.install "cfctl"
