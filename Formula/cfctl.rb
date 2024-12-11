@@ -5,21 +5,21 @@
 class Cfctl < Formula
   desc "Command-line interface for SpaceONE"
   homepage "https://github.com/cloudforet-io/cfctl"
-  version "1.0.1"
+  version "1.0.2"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cloudforet-io/cfctl/releases/download/v1.0.1/cfctl_Darwin_x86_64.tar.gz"
-      sha256 "bed8155ac20ae94634f22adb8af52f278651f53fa9c4cce6a05fbbe7a8294040"
+      url "https://github.com/cloudforet-io/cfctl/releases/download/v1.0.2/cfctl_Darwin_x86_64.tar.gz"
+      sha256 "2928f0b3397ec1961da05595eafc0ae5bb46c5c9f9ce80910ee39bd21b3a82cf"
 
       def install
         bin.install "cfctl"
       end
     end
     on_arm do
-      url "https://github.com/cloudforet-io/cfctl/releases/download/v1.0.1/cfctl_Darwin_arm64.tar.gz"
-      sha256 "e0e711c66cb4f851f7f3d638f9423cc14731d9294df3656f71a0605cace9e8ff"
+      url "https://github.com/cloudforet-io/cfctl/releases/download/v1.0.2/cfctl_Darwin_arm64.tar.gz"
+      sha256 "eca659eb374046f18ea94d36ece22b010c5ed1ed3d89842593cd9e55048e5fcf"
 
       def install
         bin.install "cfctl"
@@ -30,8 +30,8 @@ class Cfctl < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cloudforet-io/cfctl/releases/download/v1.0.1/cfctl_Linux_x86_64.tar.gz"
-        sha256 "3a8d851543771863341f4ccbfc8e61ca8d97612d214bb334de289dd9170ed684"
+        url "https://github.com/cloudforet-io/cfctl/releases/download/v1.0.2/cfctl_Linux_x86_64.tar.gz"
+        sha256 "87e90c632940d0e2cea2d477975ff87dbc6cbfa4a5dbe5adfa15a771c71ff55b"
 
         def install
           bin.install "cfctl"
@@ -40,8 +40,8 @@ class Cfctl < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cloudforet-io/cfctl/releases/download/v1.0.1/cfctl_Linux_arm64.tar.gz"
-        sha256 "9a120a33e86e971b5002c17f3d915daab2e5868b4e55b149a4079424fac84068"
+        url "https://github.com/cloudforet-io/cfctl/releases/download/v1.0.2/cfctl_Linux_arm64.tar.gz"
+        sha256 "afd76765d5b1cabcd1d8f167b1e7a40d243297b3ab5e5b33116eef9c3df0eba2"
 
         def install
           bin.install "cfctl"
